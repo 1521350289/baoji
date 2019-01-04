@@ -1,8 +1,8 @@
 import * as constants from './constants';
-import { fromJS } from 'immutable';
 
-export const mouseEnter = () => ({
-  type: constants.MOUSE_ENTER
+export const mouseEnter = (id) => ({
+  type: constants.MOUSE_ENTER,
+  id
 });
 
 export const mouseLeave = () => ({
