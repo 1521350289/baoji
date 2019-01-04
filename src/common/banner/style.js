@@ -3,23 +3,34 @@ import styled from 'styled-components';
 export const ScroDiv = styled.div`
   width: 100%;
   height: 500px;
-  background-color: green;
 `
 
 export const ImgDiv = styled.div`
   width: 100%;
   .left-btn {
-    border: 1px solid black;
     background-color: red;
+    float: left;
+    position: absolute;
+    left: 40px;
+    top: 432px;
+    border-radius: 50%;
   }
-  .left-btn {
-    border: 1px solid black;
+  .right-btn {
+    background-color: red;
+    float: right;
+    position: absolute;
+    right: 40px;
+    top: 432px;
+    border-radius: 50%;
   }
   .link {
-    z-index: -1;
+    height: 500px;
+    display: block;
+    cursor: pointer;
   }
   .img {
-    z-index: -1;
+    width: 100%;
+    height: 100%;
   }
 `
 

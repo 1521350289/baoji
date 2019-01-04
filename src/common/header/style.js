@@ -89,6 +89,8 @@ export const Select = styled.ul`
   width: 100%;
   display: block;
   background-color: #fff;
+  position: relative;
+  z-index: 1;
 `
 
 export const SelectItem = styled.li`
@@ -96,9 +98,12 @@ export const SelectItem = styled.li`
   line-height: 50px;
   border-bottom: 1px #e6e4e3 solid;
   .select-a {
+    margin: auto;
+    width: 97%;
     text-decoration: none;
     display: block;
     color: #808080;
+    border-radius: 10px;
     &:hover {
       background-color: #A68461;
       color: #fff;
