@@ -14,7 +14,7 @@ import {
 
 class Header extends Component {
   getMenu() {
-    const { handleMouseEnter, menu, handleMouseLeave } = this.props;
+    const { mouseEnter, handleMouseEnter, menu, handleMouseLeave } = this.props;
     const menuList = [];
     menu.map((item) => {
       menuList.push(
@@ -23,9 +23,10 @@ class Header extends Component {
             {item.get('title')}
             <span className='menu-en-title'>{item.get('en')}</span>
           </a>
-          {this.getSelect(item.get('id'), item.get('select'))}
+          {(mouseEnter === item.get('id')) ? this.getSelect(item.get('id'), item.get('select')) : ''}
         </MenuItem>
       );
+      return menuList;
     })
     return (
       <ul className='menu'>
@@ -35,24 +36,17 @@ class Header extends Component {
   }
 
   getSelect(id, item) {
-    const { mouseEnter, handleMouseEnter } = this.props;
-    const selectList = [];
-    if (mouseEnter === id) {
-      item.map((item) => {
-        selectList.push(
-          <SelectItem key={item.get('id')}>
-            <a href={item.get('url')} className='select-a'>{item.get('name')}</a>
-          </SelectItem>
-        )
-      });
-      return (
-        <Select onMouseOver={handleMouseEnter(id)}>
-          {selectList}
-        </Select>
-      )
-    }else {
-      return null;
-    }
+    return (
+      <Select>
+        {
+          item.map((item) => (
+            <SelectItem key={item.get('id')}>
+              <a href={item.get('url')} className='select-a'>{item.get('name')}</a>
+            </SelectItem>
+          ))
+        }
+      </Select>
+    )
   }
 
   render() {
@@ -68,7 +62,7 @@ class Header extends Component {
           </Logo>
         </TopDiv>
         <MenuDiv>
-          {() => {this.getMenu()}}
+          {this.getMenu()}
         </MenuDiv>
       </HeaderWrapper>
     )

@@ -13,7 +13,7 @@ class Banner extends Component {
         <ImgDiv>
           <Button className='left-btn'><i className="iconfont">&#xe7aa;</i></Button>
             <a href='/' className='link'>
-              <img className='img' src="http://bj.xabjyy.com/templets/baoji/images/7aaaa3108acd3e.jpg" className='img' />
+              <img alt='' className='img' src="http://bj.xabjyy.com/templets/baoji/images/7aaaa3108acd3e.jpg" />
             </a>
           <Button className='right-btn'><i className="iconfont">&#xe7ab;</i></Button>
         </ImgDiv>
