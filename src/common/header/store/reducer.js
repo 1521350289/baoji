@@ -16,12 +16,15 @@ const defaultState = fromJS({
     en: 'ABOUT US',
     url: '/',
     select: [{
+      id: 1,
       name: '医院简介',
       url: ''
     },{
+      id: 2,
       name: '医院环境',
       url: ''
     },{
+      id: 3,
       name: '先进设备',
       url: ''
     }]
@@ -31,21 +34,27 @@ const defaultState = fromJS({
     en: 'DEPARTMENT',
     url: '/',
     select: [{
+      id: 1,
       name: '康复科',
       url: ''
     },{
+      id: 2,
       name: '美容科',
       url: ''
     },{
+      id: 3,
       name: '妇科',
       url: ''
     },{
+      id: 4,
       name: '中医科',
       url: ''
     },{
+      id: 5,
       name: '内科',
       url: ''
     },{
+      id: 6,
       name: '外科',
       url: ''
     }]
@@ -61,15 +70,19 @@ const defaultState = fromJS({
     en: 'SERVICE INFORMAYION',
     url: '/',
     select: [{
+      id: 1,
       name: '门诊指南',
       url: ''
     },{
+      id: 2,
       name: '入院指南',
       url: ''
     },{
+      id: 3,
       name: '医保须知',
       url: ''
     },{
+      id: 4,
       name: '医院地址',
       url: ''
     }]
@@ -86,7 +99,7 @@ const defaultState = fromJS({
 export default (state = defaultState, action) => {
   switch (action.type) {
     case constants.MOUSE_ENTER:
-      return state.set('mouseEnter', action.id);
+      return state.set('mouseEnter', fromJS(action.id));
     case constants.MOUSE_LEAVE:
       return state.set('mouseEnter', 0);
     default:

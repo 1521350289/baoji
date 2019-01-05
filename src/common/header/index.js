@@ -37,11 +37,10 @@ class Header extends Component {
   getSelect(id, item) {
     const { mouseEnter, handleMouseEnter } = this.props;
     const selectList = [];
-    console.log(item);
     if (mouseEnter === id) {
       item.map((item) => {
         selectList.push(
-          <SelectItem>
+          <SelectItem key={item.get('id')}>
             <a href={item.get('url')} className='select-a'>{item.get('name')}</a>
           </SelectItem>
         )
@@ -69,11 +68,13 @@ class Header extends Component {
           </Logo>
         </TopDiv>
         <MenuDiv>
-          {this.getMenu()}
+          {() => {this.getMenu()}}
         </MenuDiv>
       </HeaderWrapper>
     )
   }
+
+
 }
 
 // const mapStateToProps = (state) =>  ({

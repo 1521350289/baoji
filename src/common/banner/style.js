@@ -8,7 +8,6 @@ export const ScroDiv = styled.div`
 export const ImgDiv = styled.div`
   width: 100%;
   .left-btn {
-    background-color: red;
     float: left;
     position: absolute;
     left: 40px;
@@ -16,7 +15,6 @@ export const ImgDiv = styled.div`
     border-radius: 50%;
   }
   .right-btn {
-    background-color: red;
     float: right;
     position: absolute;
     right: 40px;
@@ -32,9 +30,14 @@ export const ImgDiv = styled.div`
     width: 100%;
     height: 100%;
   }
+  .iconfont {
+    font-size: 35px;
+  }
 `
 
 export const Button = styled.div`
   width: 36px;
   height: 36px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,.2);
 `
