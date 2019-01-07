@@ -20,7 +20,7 @@ const defaultState = fromJS({
     img: 'http://bj.xabjyy.com/templets/baoji/images/19c29b586cd594.jpg',
     link: '/',
     position: 0
-  }],
+  }]
 
 });
 
@@ -29,7 +29,7 @@ export default (state = defaultState, action) => {
     case constants.MOUSE_IN:
       return state.set('mouseIn', action.value);
     case constants.CHANGE_NUM:
-      return state.set('nowImg', fromJS(action.nowImg+1))
+      return state.set('nowImg', fromJS(action.nowImg+1));
     default:
       return state;
   }

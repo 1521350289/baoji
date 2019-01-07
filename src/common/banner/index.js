@@ -9,13 +9,6 @@ import {
 
 class Banner extends PureComponent {
 
-  changeNum() {
-    const { nowImg } = this.props;
-    console.log(nowImg);
-    //this.props.changeNum(nowImg);
-    return true;
-  }
-
   render() {
     const { handleMouseOver, handleMouseLeave, mouseIn, scroImg } = this.props;
     return (
@@ -38,7 +31,7 @@ class Banner extends PureComponent {
   }
 
   componentDidMount() {
-    this.timer = setInterval(this.changeNum,this.props.scroTime);
+    this.timer = setInterval(this.props.changeNum,this.props.scroTime);
   }
 
 }
@@ -61,6 +54,7 @@ const mapDispatch = (dispatch) => {
       dispatch(actionCreators.mouseIn(false));
     },
     changeNum(nowImg) {
+      console.log(nowImg);
       dispatch(actionCreators.changeNum(nowImg));
     }
   }
