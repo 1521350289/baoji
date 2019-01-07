@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { actionCreators } from './store';
 import {
@@ -12,7 +12,8 @@ import {
   SelectItem
 } from './style';
 
-class Header extends Component {
+class Header extends PureComponent {
+
   getMenu() {
     const { mouseEnter, handleMouseEnter, menu, handleMouseLeave } = this.props;
     const menuList = [];
@@ -52,7 +53,6 @@ class Header extends Component {
   render() {
     const { headerImg } = this.props;
 
-
     return (
       <HeaderWrapper>
         <TopDiv>
@@ -66,8 +66,8 @@ class Header extends Component {
         </MenuDiv>
       </HeaderWrapper>
     )
+    
   }
-
 
 }
 
@@ -81,7 +81,7 @@ const mapStateToProps = (state) => {
     headerImg: state.getIn(['header', 'headerImg']),
     menu: state.getIn(['header', 'menu'])
   })
-}
+};
 
 const mapDispathToProps = (dispatch) => {
   return {
@@ -92,7 +92,7 @@ const mapDispathToProps = (dispatch) => {
       dispatch(actionCreators.mouseLeave());
     }
   }
-}
+};
 
 
 export default connect(mapStateToProps, mapDispathToProps)(Header);
