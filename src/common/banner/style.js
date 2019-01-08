@@ -33,6 +33,14 @@ export const ImgDiv = styled.div`
   .iconfont {
     font-size: 35px;
   }
+  .div-pointer {
+    width: 100%;
+    height: 20px;
+    position: relative;
+    top: -35px;
+    text-align: center;
+    z-index:10;
+  }
 `
 
 export const Button = styled.div`
@@ -40,4 +48,25 @@ export const Button = styled.div`
   height: 36px;
   cursor: pointer;
   background-color: rgba(0,0,0,.2);
+`
+
+export const ScrollPointer = styled.ul`
+  border-radius: 10px;
+  display: inline-block;
+  margin: 0;
+  padding: 5px;
+  border: 1px soild black;
+  background-color: rgba(0,0,0,.2);
+  li {
+    float: left;
+    margin: 0 3px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,.5);
+    cursor: pointer;
+  }
+  .pointer {
+    background-color: #fff;
+  }
 `

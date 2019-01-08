@@ -3,8 +3,9 @@ import * as constants from './constants';
 
 const defaultState = fromJS({
   mouseIn: false,
-  scroTime: 2000,
-  nowImg: 1,
+  scroTime: 3000,
+  nowImgNum: 1,
+  isScroll: true,
   scroImg: [{
     id: 1,
     img: 'http://bj.xabjyy.com/templets/baoji/images/7aaaa3108acd3e.jpg',
@@ -27,9 +28,11 @@ const defaultState = fromJS({
 export default (state = defaultState, action) => {
   switch (action.type) {
     case constants.MOUSE_IN:
-      return state.set('mouseIn', action.value);
+      return state.set('mouseIn', fromJS(action.value));
     case constants.CHANGE_NUM:
-      return state.set('nowImg', fromJS(action.nowImg+1));
+      return state.set('nowImgNum', fromJS(action.nowImgNum));
+    case constants.INIT_IMG_NUM:
+      return state.set('nowImgNum', fromJS(1));
     default:
       return state;
   }

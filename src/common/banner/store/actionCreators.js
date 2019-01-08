@@ -5,7 +5,11 @@ export const mouseIn = (value) => ({
   value
 });
 
-export const changeNum = (nowImg) => ({
+export const changeNum = (nowImgNum) => ({
   type: constants.CHANGE_NUM,
-  nowImg
+  nowImgNum
+});
+
+export const initImgNum = () => ({
+  type: constants.INIT_IMG_NUM
 })
