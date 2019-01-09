@@ -1,13 +1,26 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import Room from './components/Room';
-
+import News from './components/News';
+import {
+  HomeWrapper,
+  Title
+ } from './style';
 
 class Home extends PureComponent {
 
   render() {
     return (
-      <Room />
+      <HomeWrapper>
+        <Room />
+        <Title>
+          <div className='title'>
+            <div className='left'><b></b></div>
+            <div className='center'></div>
+            <div className='right'><b></b></div>
+          </div>
+        </Title>
+      </HomeWrapper>
     )
   }
 
