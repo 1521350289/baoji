@@ -5,16 +5,23 @@ import Header from './common/header';
 import Banner from './common/banner';
 import { GlobalStyle } from './style';
 import { GlobalIcon } from './statics/iconfont/iconfont';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Home from './pages/home';
 
 class App extends Component {
 
   render() {
     return (
       <Provider store={store}>
-        <GlobalStyle />
-        <GlobalIcon />
-        <Header />
-        <Banner />
+        <BrowserRouter>
+          <div>
+            <GlobalStyle />
+            <GlobalIcon />
+            <Header />
+            <Banner />
+            <Route path='/' exact component={Home} />
+          </div>
+        </BrowserRouter>
       </Provider>
     );
   }
