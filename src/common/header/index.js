@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { actionCreators } from './store';
+import { Link } from 'react-router-dom';
 import {
   HeaderWrapper,
   Logo,
@@ -20,10 +21,10 @@ class Header extends PureComponent {
     menu.map((item) => {
       menuList.push(
         <MenuItem onMouseOver={() => handleMouseEnter(item.get('id'))} onMouseLeave={handleMouseLeave} key={item.get('id')} className={((item.get('id')===1) ? 'bottom-line' : '')}>
-          <a className='menu-cn-title' href='/'>
+          <Link className='menu-cn-title' to='/'>
             {item.get('title')}
             <span className='menu-en-title'>{item.get('en')}</span>
-          </a>
+          </Link>
           {(mouseEnter === item.get('id')) ? this.getSelect(item.get('id'), item.get('select')) : ''}
         </MenuItem>
       );
@@ -42,7 +43,7 @@ class Header extends PureComponent {
         {
           item.map((item) => (
             <SelectItem key={item.get('id')}>
-              <a href={item.get('url')} className='select-a'>{item.get('name')}</a>
+              <Link to={item.get('url')} className='select-a'>{item.get('name')}</Link>
             </SelectItem>
           ))
         }
@@ -66,7 +67,7 @@ class Header extends PureComponent {
         </MenuDiv>
       </HeaderWrapper>
     )
-    
+
   }
 
 }

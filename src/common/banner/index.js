@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { actionCreators } from './store';
+import { Link } from 'react-router-dom';
 import {
   ScroDiv,
   ImgDiv,
@@ -28,9 +29,9 @@ class Banner extends PureComponent {
               scroImg.map((item, key) => {
                 if (nowImgNum === key+1) {
                   return (
-                    <a href={item.get('link')} className='link' key={item.get('id')}>
-                      <img background-position='500px 0' alt='' className='img one' src={item.get('img')} />
-                    </a>
+                    <Link to={item.get('link')} className='link' key={item.get('id')}>
+                      <img background-position='500px 0' alt='' className='img one' src={item.get('img')}/>
+                    </Link>
                   );
                 }else {
                   return null;
