@@ -14,11 +14,11 @@ const defaultState = fromJS({
     id: 2,
     title: '医院简介',
     en: 'ABOUT US',
-    url: '/',
+    url: '/introduce',
     select: [{
       id: 1,
       name: '医院简介',
-      url: ''
+      url: '/introduce'
     },{
       id: 2,
       name: '医院环境',

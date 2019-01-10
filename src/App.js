@@ -7,6 +7,7 @@ import { GlobalStyle } from './style';
 import { GlobalIcon } from './statics/iconfont/iconfont';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './pages/home';
+import Introduce from './pages/introduce';
 
 class App extends Component {
 
@@ -20,6 +21,7 @@ class App extends Component {
             <Header />
             <Banner />
             <Route path='/' exact component={Home} />
+            <Route path='/introduce' exact component={Introduce} />
           </div>
         </BrowserRouter>
       </Provider>

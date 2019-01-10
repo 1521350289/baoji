@@ -21,9 +21,9 @@ class Header extends PureComponent {
     menu.map((item) => {
       menuList.push(
         <MenuItem onMouseOver={() => handleMouseEnter(item.get('id'))} onMouseLeave={handleMouseLeave} key={item.get('id')} className={((item.get('id')===1) ? 'bottom-line' : '')}>
-          <Link className='menu-cn-title' to='/'>
-            {item.get('title')}
-            <span className='menu-en-title'>{item.get('en')}</span>
+          <Link to={item.get('url')} className='menu-cn-title'>
+              {item.get('title')}
+              <span className='menu-en-title'>{item.get('en')}</span>
           </Link>
           {(mouseEnter === item.get('id')) ? this.getSelect(item.get('id'), item.get('select')) : ''}
         </MenuItem>
