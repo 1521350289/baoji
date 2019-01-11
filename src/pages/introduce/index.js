@@ -3,7 +3,7 @@ import React, { PureComponent } from 'react';
 class Introduce extends PureComponent {
   render() {
     return (
-      <div>introduce</div>
+      <h1>introduce<br /><br /><br /><br /><br /><br /><br /></h1>
     )
   }
 }
