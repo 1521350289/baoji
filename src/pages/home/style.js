@@ -144,6 +144,7 @@ export const Dashed = styled.div`
 export const NewsList = styled.ul`
   color: #494949;
   float: left;
+  width: 100%;
   li {
     line-height: 37px;
     padding-left: 7%;
