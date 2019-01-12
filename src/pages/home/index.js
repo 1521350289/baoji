@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Room from './components/Room';
 import News from './components/News';
 import RoomShow from './components/RoomShow';
+import Doctor from './components/Doctor';
 import {
   HomeWrapper,
   Title,
@@ -22,6 +23,7 @@ class Home extends PureComponent {
         <Room />
         <News />
         <RoomShow />
+        <Doctor />
       </HomeWrapper>
     )
   }

@@ -30,6 +30,13 @@ export const NewsWrapper = styled.div`
   }
 `
 
+export const DoctorWrapper = styled.div`
+  width: 100%;
+  .DoctorWrapper {
+    background:#FFFBF7;
+  }
+`
+
 export const RoomDiv = styled.div`
   display: block;
   width: 118px;
@@ -48,6 +55,7 @@ export const Title = styled.div`
   text-align: center;
   margin: auto;
   padding: 25px 0 40px 0;
+  color: #494949;
   .line {
     position: relative;
     display: block;
@@ -68,6 +76,7 @@ export const Title = styled.div`
     font-size: 26px;
     line-height: 35px;
     span {
+      color: #848484;
       height: 30px;
       font-size: 13px;
       line-height: 30px;
@@ -235,5 +244,82 @@ export const ShowList = styled.ul`
     line-height: 45px;
     margin: 0 auto;
     float: left;
+  }
+`
+
+export const TeamTxt = styled.div`
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  color: #4e4e4e;
+`
+
+export const Team = styled.div`
+  width: 1190px;
+  margin: 20px auto 0;
+`
+
+export const LeftPointer = styled.div`
+
+`
+
+export const TeamList = styled.ul`
+  li {
+    width: 180px;
+    float: left;
+    margin-left: 6px;
+  }
+  .doctor {
+    width: 100%;
+  }
+  img {
+    width: 180px;
+  }
+  .doctor-name {
+    width: 94%;
+    background: #efefef;
+    height: 30px;
+    line-height: 30px
+    padding: 0 3%;
+    margin-top: 1px;
+    p {
+      float: left;
+    }
+    span {
+      font-size: 12px;
+      padding-left: 8%;
+      color: #696969;
+    }
+  }
+  .doctor-years {
+    width: 90%;
+    background: #efefef;
+    height: 30px;
+    padding: 1% 5%;
+    margin-top: 1px;
+    font-size: 14px;
+    p{
+      font-size: 12px;
+      line-height: 30px;
+      color: #696969;
+    }
+    span {
+      color: #ff9191;
+    }
+  }
+  .doctor-file {
+    width: 100%;
+    height: 50px;
+    background: #A68461;
+    margin-top: 1px;
+    text-align: center;
+    a {
+      font-size: 18px;
+      line-height: 50px;
+      color: #fff;
+      display: block;
+    }
   }
 `
