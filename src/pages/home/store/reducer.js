@@ -25,7 +25,10 @@ const defaultState = fromJS({
     id: 6,
     imgUrl: "http://www.xabjyy.com/templets/baoji/images/ye-r6.jpg",
     link: '/'
-  }]
+  }],
+  mouseIn: false,
+  scroDoctorLeftSize: 0,
+  scroTime: 4000
 });
 
 export default (state = defaultState, action) => {

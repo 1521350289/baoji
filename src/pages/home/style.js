@@ -260,13 +260,55 @@ export const TeamTxt = styled.div`
 export const Team = styled.div`
   width: 1190px;
   margin: 20px auto 0;
+  .team-box {
+    float: left;
+    width: 94%;
+    height: 350px;
+    overflow: hidden;
+  }
 `
 
 export const LeftPointer = styled.div`
+  height: 48px;
+  width: 30px;
+  line-height: 48px;
+  margin-top: 135px;
+  cursor: pointer;
+  float: left;
+  i {
+    float: left;
+    width: 30px;
+    font-size: 38px;;
+    color: rgba(0,0,0,.4);
+  }
+`
 
+export const RightPointer = styled.div`
+  height: 48px;
+  width: 30px;
+  line-height: 48px;
+  float: left;
+  margin-top: 135px;
+  cursor: pointer;
+  i {
+    float: left;
+    width: 30px;
+    font-size: 38px;;
+    color: rgba(0,0,0,.4);
+  }
+`
+
+export const TeamBox = styled.div`
+  position: relative;
 `
 
 export const TeamList = styled.ul`
+  position: relative;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 3534px;
   li {
     width: 180px;
     float: left;
@@ -277,6 +319,7 @@ export const TeamList = styled.ul`
   }
   img {
     width: 180px;
+    height: 235px;
   }
   .doctor-name {
     width: 94%;
