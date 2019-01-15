@@ -303,8 +303,9 @@ export const TeamBox = styled.div`
 `
 
 export const TeamList = styled.ul`
+  transition: all .7s;
   position: relative;
-  left: 0;
+  left: ${(props) => '-'+props.left+'px'};
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -365,5 +366,33 @@ export const TeamList = styled.ul`
       color: #fff;
       display: block;
     }
+  }
+`
+
+export const ShareWrapper = styled.div`
+  width: 100%;
+  margin: 2% 0;
+  padding: 0 0 1%;
+  background: url('http://www.xabjyy.com/templets/baoji/images/tmbj594.png') no-repeat;
+  .sharetitle {
+    padding-bottom: 30px;
+  }
+  .ShareWrapper {
+    background: #f9efea;
+    width: 170px;
+    span {
+      width: 100%;
+    }
+  }
+`
+
+export const ShareTxt = styled.div`
+  width: 65%;
+  margin: 0 auto;
+  p {
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    color: #4e4e4e;
   }
 `

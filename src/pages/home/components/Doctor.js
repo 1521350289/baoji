@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { actionCreators } from '../store';
 import {
   DoctorWrapper,
   Title,
@@ -9,12 +10,14 @@ import {
   TeamBox,
   TeamList,
   LeftPointer,
-  RightPointer
+  RightPointer,
+  Clear
 } from '../style';
 
 class Doctor extends PureComponent {
 
   render() {
+    const { scroDoctorLeftSize, handleMouseIn, handleMouseLeave } =this.props;
 
     return (
       <DoctorWrapper>
@@ -35,174 +38,31 @@ class Doctor extends PureComponent {
           </LeftPointer>
           <div className='team-box'>
             <TeamBox>
-              <TeamList  ref={(list) => {console.log(list.style.left='0')}}>
-                <li>
-                  <div className='doctor'>
-                    <div className='doctor-img'>
-                      <img src="http://www.xabjyy.com/uploads/allimg/171215/3-1G215095204239.jpg" />
-                    </div>
-                    <div className='doctor-name'>
-                      <p>吴胜利</p>
-                      <span>全科医师</span>
-                    </div>
-                    <div className='doctor-years'>
-                      <p>
-                        科  室：
-                        <span>专家团队</span>
-                      </p>
-                    </div>
-                    <div className='doctor-file'>
-                      <a href='/'>点击查看详情</a>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div className='doctor'>
-                    <div className='doctor-img'>
-                      <img src="http://www.xabjyy.com/uploads/allimg/171215/3-1G215095204239.jpg" />
-                    </div>
-                    <div className='doctor-name'>
-                      <p>吴胜利</p>
-                      <span>全科医师</span>
-                    </div>
-                    <div className='doctor-years'>
-                      <p>
-                        科  室：
-                        <span>专家团队</span>
-                      </p>
-                    </div>
-                    <div className='doctor-file'>
-                      <a href='/'>点击查看详情</a>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div className='doctor'>
-                    <div className='doctor-img'>
-                      <img src="http://www.xabjyy.com/uploads/allimg/171215/3-1G215095204239.jpg" />
-                    </div>
-                    <div className='doctor-name'>
-                      <p>吴胜利</p>
-                      <span>全科医师</span>
-                    </div>
-                    <div className='doctor-years'>
-                      <p>
-                        科  室：
-                        <span>专家团队</span>
-                      </p>
-                    </div>
-                    <div className='doctor-file'>
-                      <a href='/'>点击查看详情</a>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div className='doctor'>
-                    <div className='doctor-img'>
-                      <img src="http://www.xabjyy.com/uploads/allimg/171215/3-1G215095204239.jpg" />
-                    </div>
-                    <div className='doctor-name'>
-                      <p>吴胜利</p>
-                      <span>全科医师</span>
-                    </div>
-                    <div className='doctor-years'>
-                      <p>
-                        科  室：
-                        <span>专家团队</span>
-                      </p>
-                    </div>
-                    <div className='doctor-file'>
-                      <a href='/'>点击查看详情</a>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div className='doctor'>
-                    <div className='doctor-img'>
-                      <img src="http://www.xabjyy.com/uploads/allimg/171215/3-1G215095204239.jpg" />
-                    </div>
-                    <div className='doctor-name'>
-                      <p>吴胜利</p>
-                      <span>全科医师</span>
-                    </div>
-                    <div className='doctor-years'>
-                      <p>
-                        科  室：
-                        <span>专家团队</span>
-                      </p>
-                    </div>
-                    <div className='doctor-file'>
-                      <a href='/'>点击查看详情</a>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div className='doctor'>
-                    <div className='doctor-img'>
-                      <img src="http://www.xabjyy.com/uploads/allimg/171215/3-1G215095204239.jpg" />
-                    </div>
-                    <div className='doctor-name'>
-                      <p>吴胜利</p>
-                      <span>全科医师</span>
-                    </div>
-                    <div className='doctor-years'>
-                      <p>
-                        科  室：
-                        <span>专家团队</span>
-                      </p>
-                    </div>
-                    <div className='doctor-file'>
-                      <a href='/'>点击查看详情</a>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div className='doctor'>
-                    <div className='doctor-img'>
-                      <img src="http://www.xabjyy.com/uploads/allimg/171215/3-1G215095204239.jpg" />
-                    </div>
-                    <div className='doctor-name'>
-                      <p>吴胜利</p>
-                      <span>全科医师</span>
-                    </div>
-                    <div className='doctor-years'>
-                      <p>
-                        科  室：
-                        <span>专家团队</span>
-                      </p>
-                    </div>
-                    <div className='doctor-file'>
-                      <a href='/'>点击查看详情</a>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div className='doctor'>
-                    <div className='doctor-img'>
-                      <img src="http://www.xabjyy.com/uploads/allimg/171215/3-1G215095204239.jpg" />
-                    </div>
-                    <div className='doctor-name'>
-                      <p>吴胜利</p>
-                      <span>全科医师</span>
-                    </div>
-                    <div className='doctor-years'>
-                      <p>
-                        科  室：
-                        <span>专家团队</span>
-                      </p>
-                    </div>
-                    <div className='doctor-file'>
-                      <a href='/'>点击查看详情</a>
-                    </div>
-                  </div>
-                </li>
+              <TeamList  left={this.props.scroDoctorLeftSize} onMouseOver={handleMouseIn} onMouseLeave={handleMouseLeave}>
+                {
+                  this.props.doctorList.map((item) => (
+                    <li key={item.get('id')}>
+                      <div className='doctor'>
+                        <div className='doctor-img'>
+                          <img src={item.get('img')} />
+                        </div>
+                        <div className='doctor-name'>
+                          <p>{item.get('name')}</p>
+                          <span>{item.get('job')}</span>
+                        </div>
+                        <div className='doctor-years'>
+                          <p>
+                            科  室：
+                            <span>{item.get('room')}</span>
+                          </p>
+                        </div>
+                        <div className='doctor-file'>
+                          <a href={item.get('detail')}>点击查看详情</a>
+                        </div>
+                      </div>
+                    </li>
+                  ))
+                }
 
               </TeamList>
             </TeamBox>
@@ -211,6 +71,7 @@ class Doctor extends PureComponent {
             <i className="iconfont">&#xe64a;</i>
           </RightPointer>
         </Team>
+        <Clear />
       </DoctorWrapper>
     )
   }
@@ -220,8 +81,13 @@ class Doctor extends PureComponent {
   }
 
   scroNum() {
-    console.log(123);
-    this.props.changePic();
+    if (!this.props.mouseIn) {
+      if (this.props.scroDoctorLeftSize>=(this.props.doctorList.size*186-1116)) {
+        this.props.changePic(0);
+      }else {
+        this.props.changePic(this.props.scroDoctorLeftSize+186);
+      }
+    }
   }
 
   componentWillUnmount() {
@@ -232,13 +98,21 @@ class Doctor extends PureComponent {
 
 const mapState = (state) => ({
   scroDoctorLeftSize: state.getIn(['home','scroDoctorLeftSize']),
-  scroTime: state.getIn(['home', 'scroTime'])
+  scroTime: state.getIn(['home', 'scroTime']),
+  doctorList: state.getIn(['home', 'doctorList']),
+  mouseIn: state.getIn(['home', 'mouseIn'])
 })
 
 const mapDispatch = (dispatch) => {
   return {
-    changePic() {
-      //console.log(123);
+    changePic(value) {
+      dispatch(actionCreators.changePic(value));
+    },
+    handleMouseIn() {
+      dispatch(actionCreators.mouseIn());
+    },
+    handleMouseLeave() {
+      dispatch(actionCreators.mouseLeave());
     }
   }
 }

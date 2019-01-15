@@ -32,6 +32,7 @@ export const ImgDiv = styled.div`
   }
   .iconfont {
     font-size: 35px;
+    color: #fff;
   }
   .div-pointer {
     width: 100%;
@@ -48,6 +49,9 @@ export const Button = styled.div`
   height: 36px;
   cursor: pointer;
   background-color: rgba(0,0,0,.2);
+  :hover {
+    background-color: rgba(0,0,0,.35);
+  }
 `
 
 export const ScrollPointer = styled.ul`
@@ -57,6 +61,9 @@ export const ScrollPointer = styled.ul`
   padding: 5px;
   border: 1px soild black;
   background-color: rgba(0,0,0,.2);
+  :hover {
+    background-color: rgba(0,0,0,.35);
+  }
   li {
     float: left;
     margin: 0 3px;
