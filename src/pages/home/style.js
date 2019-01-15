@@ -374,6 +374,7 @@ export const ShareWrapper = styled.div`
   margin: 2% 0;
   padding: 0 0 1%;
   background: url('http://www.xabjyy.com/templets/baoji/images/tmbj594.png') no-repeat;
+  height: auto;
   .sharetitle {
     padding-bottom: 30px;
   }
@@ -394,5 +395,86 @@ export const ShareTxt = styled.div`
     line-height: 26px;
     font-size: 14px;
     color: #4e4e4e;
+  }
+`
+
+export const ShareBox = styled.div`
+  width: 1190px;
+  margin: 0 auto;
+  height: auto;
+`
+
+export const ShareList = styled.ul`
+  width: 100%;
+  margin-top: 30px;
+  li {
+    float: left;
+    width: 30.1%;
+    padding: 10px 10px 30px;
+    border: 1px #ccc solid;
+    margin-right: 2%;
+  }
+  .th {
+    margin-right: 0;
+  }
+  img {
+    height: 175px;
+    width: 100%;
+  }
+  h3 {
+    line-height: 24px;
+    font-weight: bold;
+    color: #696969;
+    padding: 20px 0;
+    font-size: 15px;
+  }
+  p{
+    color: #696969;
+    line-height: 26px;
+    font-size: 14px;
+  }
+`
+
+export const HospitalStyleWrapper = styled.div`
+  width: 100%;
+  .HospitalStyleWrapper {
+    background: #FFFBF7;
+    width: 170px;
+    span {
+      width: 100%;
+    }
+  }
+`
+
+export const StyleBox = styled.div`
+  width: 1190px;
+  margin: 1% auto;
+`
+
+export const BoxLeft = styled.div`
+  float: left;
+  width: 34%;
+  height: 423px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`
+
+export const BoxRight = styled.ul`
+  float: right;
+  width: 65%;
+  li {
+    width: 32.3%;
+    padding: 0 1.5% 1.5% 0;
+    height: 206px;
+    float: left;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .ref {
+    padding-right: 0;
   }
 `

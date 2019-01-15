@@ -17,7 +17,7 @@ import {
 class Doctor extends PureComponent {
 
   render() {
-    const { scroDoctorLeftSize, handleMouseIn, handleMouseLeave } =this.props;
+    const { scroDoctorLeftSize, handleMouseIn, handleMouseLeave, handleBackImg, handleGoImg } =this.props;
 
     return (
       <DoctorWrapper>
@@ -33,7 +33,13 @@ class Doctor extends PureComponent {
           <p>With our core values of hoesty, hard work, and trust. Our goal is to have these characteristics influence everything we do in business and in life. We sincerely enjoy the work we do, and our clients garner the benefits.</p>
         </TeamTxt>
         <Team>
-          <LeftPointer>
+          <LeftPointer onClick={()=>{
+              if (this.props.scroDoctorLeftSize<=0) {
+                handleBackImg(this.props.doctorList.size*186-1116);
+              }else{
+                handleBackImg(this.props.scroDoctorLeftSize-186);
+              }
+            }} onMouseOver={handleMouseIn} onMouseLeave={handleMouseLeave}>
             <i className="iconfont">&#xe605;</i>
           </LeftPointer>
           <div className='team-box'>
@@ -67,7 +73,13 @@ class Doctor extends PureComponent {
               </TeamList>
             </TeamBox>
           </div>
-          <RightPointer>
+          <RightPointer onClick={()=>{
+              if (this.props.scroDoctorLeftSize>=(this.props.doctorList.size*186-1116)) {
+                handleGoImg(0);
+              }else {
+                handleGoImg(this.props.scroDoctorLeftSize+186);
+              }
+            }}  onMouseOver={handleMouseIn} onMouseLeave={handleMouseLeave}>
             <i className="iconfont">&#xe64a;</i>
           </RightPointer>
         </Team>
@@ -113,6 +125,12 @@ const mapDispatch = (dispatch) => {
     },
     handleMouseLeave() {
       dispatch(actionCreators.mouseLeave());
+    },
+    handleBackImg(value) {
+      dispatch(actionCreators.backImg(value));
+    },
+    handleGoImg(value) {
+      dispatch(actionCreators.goImg(value));
     }
   }
 }

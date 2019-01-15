@@ -11,4 +11,14 @@ export const mouseIn = () => ({
 
 export const mouseLeave = () => ({
   type: constants.MOUSE_LEAVE
-})
+});
+
+export const backImg = (value) => ({
+  type: constants.BACK_IMG,
+  value
+});
+
+export const goImg = (value) => ({
+  type: constants.GO_IMG,
+  value
+});

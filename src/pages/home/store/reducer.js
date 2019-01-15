@@ -100,7 +100,7 @@ const defaultState = fromJS({
   }],
   mouseIn: false,
   scroDoctorLeftSize: 0,
-  scroTime: 4000
+  scroTime: 3000
 });
 
 export default (state = defaultState, action) => {
@@ -111,6 +111,10 @@ export default (state = defaultState, action) => {
       return state.set('mouseIn', fromJS(true));
     case constants.MOUSE_LEAVE:
       return state.set('mouseIn', fromJS(false));
+    case constants.BACK_IMG:
+      return state.set('scroDoctorLeftSize', fromJS(action.value));
+    case constants.GO_IMG:
+      return state.set('scroDoctorLeftSize', fromJS(action.value));
     default:
       return state;
   }

@@ -5,6 +5,7 @@ import News from './components/News';
 import RoomShow from './components/RoomShow';
 import Doctor from './components/Doctor';
 import Share from './components/Share';
+import HospitalStyle from './components/HospitalStyle';
 import {
   HomeWrapper,
   Title,
@@ -26,6 +27,7 @@ class Home extends PureComponent {
         <RoomShow />
         <Doctor />
         <Share />
+        <HospitalStyle />
       </HomeWrapper>
     )
   }
