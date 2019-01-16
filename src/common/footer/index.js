@@ -14,7 +14,8 @@ import {
   ContactBox,
   MainRight,
   Title,
-  List
+  List,
+  ICPbox
 } from './style';
 
 class Footer extends PureComponent {
@@ -77,6 +78,14 @@ class Footer extends PureComponent {
             </MainRight>
             <Clear />
           </FooterMain>
+          <ICPbox>
+            <div>
+              Copyright © 2002-2017. 西安保济医院 版权所有  陕ICP备17019784号-1
+              <br />
+              本网站刊登的医院及产品各种信息、图片和资料均为西安莲湖保济医院版权所有，未经授权禁止下载使用。
+              <a href="https://www.cnzz.com/stat/website.php?web_id=1273152554" target="_blank" title="站长统计">站长统计</a>
+            </div>
+          </ICPbox>
         </FooterBox>
       </FooterWrapper>
     )

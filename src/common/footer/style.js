@@ -156,3 +156,13 @@ export const List = styled.div`
     font-size: 14px;
   }
 `
+
+export const ICPbox = styled.div`
+  margin: 7px auto 8px auto;
+  width: 1173px;
+  color: #777;
+  font-size: 13px;
+  text-align: center;
+  line-height: 26px;
+  padding-bottom: 10px;
+`
