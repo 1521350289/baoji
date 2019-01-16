@@ -120,4 +120,39 @@ export const ContactBox = styled.div`
     background: url('http://www.xabjyy.com/templets/baoji/images/ye-02.png') no-repeat;
     background-position: 0px -42px;
   }
+  h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+  }
+`
+
+export const MainRight = styled.div`
+  float: left;
+  width: 330px;
+  padding: 45px 0 0 40px;
+`
+export const Title = styled.div`
+  width: 330px;
+  padding-left: 4%;
+  font-size: 14px;
+  color: #AD9064;
+  font-weight: bold;
+  line-height: 26px;
+`
+
+export const List = styled.div`
+  margin-top: 20px;
+  padding: 0 20px 0 20px;
+  li {
+    width: 96px;
+    padding: 2px 0;
+    float: left;
+    display: inline;
+    line-height: 26px;
+  }
+  a {
+    text-decoration: none;
+    color: #DDDDDF;
+    font-size: 14px;
+  }
 `

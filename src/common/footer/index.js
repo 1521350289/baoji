@@ -11,7 +11,10 @@ import {
   Rqrcode,
   Line,
   FollowList,
-  ContactBox
+  ContactBox,
+  MainRight,
+  Title,
+  List
 } from './style';
 
 class Footer extends PureComponent {
@@ -46,8 +49,32 @@ class Footer extends PureComponent {
               <Line />
               <ContactBox>
                 <a href="tel:02988633566"></a>
+                <h2>
+                  咨询电话 <br />
+                  029-8863-3566 <br />
+                  <br />
+                  &nbsp;地址：中国 ▪ 西安丰庆路东段86号
+                </h2>
               </ContactBox>
             </MainMid>
+            <MainRight>
+              <Title>
+                &nbsp;联系我们
+                <span> contact us</span>
+              </Title>
+              <List>
+                <li><a href="/">网站首页</a></li>
+                <li><a href="/">康复科</a></li>
+                <li><a href="/">医院简介</a></li>
+                <li><a href="/">美容科</a></li>
+                <li><a href="/">先进设备</a></li>
+                <li><a href="/">外科</a></li>
+                <li><a href="/">康复科专家</a></li>
+                <li><a href="/">入院指南</a></li>
+                <li><a href="/">门诊指南</a></li>
+                <li><a href="/">信息反馈</a></li>
+              </List>
+            </MainRight>
             <Clear />
           </FooterMain>
         </FooterBox>
