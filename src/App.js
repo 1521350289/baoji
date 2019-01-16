@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import Header from './common/header';
 import Banner from './common/banner';
+import Footer from './common/footer';
 import { GlobalStyle } from './style';
 import { GlobalIcon } from './statics/iconfont/iconfont';
 import { BrowserRouter, Route } from 'react-router-dom';
@@ -22,6 +23,7 @@ class App extends Component {
             <Banner />
             <Route path='/' exact component={Home} />
             <Route path='/introduce' exact component={Introduce} />
+            <Footer />
           </div>
         </BrowserRouter>
       </Provider>
