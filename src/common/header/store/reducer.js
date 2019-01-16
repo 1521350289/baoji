@@ -3,7 +3,7 @@ import { fromJS } from 'immutable';
 
 const defaultState = fromJS({
   mouseEnter: 0,
-  headerImg: 'http://www.xabjyy.com/templets/baoji/images/logo20171026.png',
+  headerImg: '',
   menu: [{
     id: 1,
     title: '网站首页',

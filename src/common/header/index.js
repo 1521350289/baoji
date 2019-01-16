@@ -58,8 +58,7 @@ class Header extends PureComponent {
       <HeaderWrapper>
         <TopDiv>
           <Logo>
-              <ImgDiv imgUrl={headerImg}>
-              </ImgDiv>
+              <ImgDiv imgUrl={headerImg} />
           </Logo>
         </TopDiv>
         <MenuDiv>
@@ -67,14 +66,13 @@ class Header extends PureComponent {
         </MenuDiv>
       </HeaderWrapper>
     )
+  }
 
+  componentDidMount() {
+    this.props.initHeader();
   }
 
 }
-
-// const mapStateToProps = (state) =>  ({
-//     headerImg: state.getIn(['header', 'headerImg'])
-// });
 
 const mapStateToProps = (state) => {
   return ({
@@ -91,6 +89,9 @@ const mapDispathToProps = (dispatch) => {
     },
     handleMouseLeave() {
       dispatch(actionCreators.mouseLeave());
+    },
+    initHeader() {
+      dispatch(actionCreators.initHeaderAction());
     }
   }
 };

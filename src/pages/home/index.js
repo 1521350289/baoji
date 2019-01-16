@@ -7,14 +7,7 @@ import Doctor from './components/Doctor';
 import Share from './components/Share';
 import HospitalStyle from './components/HospitalStyle';
 import {
-  HomeWrapper,
-  Title,
-  NewsWrapper,
-  LeftWrapper,
-  Content,
-  RightWrapper,
-  Dashed,
-  NewsList
+  HomeWrapper
  } from './style';
 
 class Home extends PureComponent {

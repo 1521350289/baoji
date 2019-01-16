@@ -28,91 +28,91 @@ class RoomShow extends PureComponent {
             <li className='item'>
               <div className="item-top">
                 <div className="plan">
-                  <a>
+                  <Link to="/">
                     <img src="http://bj.xabjyy.com/templets/baoji/images/kfk171105.jpg" />
-                  </a>
+                  </Link>
                 </div>
                 <div className='txt'>
                   <ul>
-                    <li><a href='/'>言语吞咽障碍</a></li>
-                    <li><a href='/'>康复评定</a></li>
-                    <li><a href='/'>物理因子</a></li>
-                    <li><a href='/'>心理康复</a></li>
+                    <li><Link to="/">言语吞咽障碍</Link></li>
+                    <li><Link to="/">康复评定</Link></li>
+                    <li><Link to="/">物理因子</Link></li>
+                    <li><Link to="/">心理康复</Link></li>
                   </ul>
                 </div>
-                <div className='more'><a href='/'>MORE</a></div>
+                <div className='more'><Link to="/">MORE</Link></div>
               </div>
             </li>
 
             <li className='item'>
               <div className="item-top">
                 <div className="plan">
-                  <a>
+                  <Link to="/">
                     <img src="http://bj.xabjyy.com/templets/baoji/images/kfk171105.jpg" />
-                  </a>
+                  </Link>
                 </div>
                 <div className='txt'>
                   <ul>
-                    <li><a href='/'>言语吞咽障碍</a></li>
-                    <li><a href='/'>康复评定</a></li>
-                    <li><a href='/'>物理因子</a></li>
-                    <li><a href='/'>心理康复</a></li>
+                    <li><Link to="/">言语吞咽障碍</Link></li>
+                    <li><Link to="/">康复评定</Link></li>
+                    <li><Link to="/">物理因子</Link></li>
+                    <li><Link to="/">心理康复</Link></li>
                   </ul>
                 </div>
-                <div className='more'><a href='/'>MORE</a></div>
+                <div className='more'><Link to="/">MORE</Link></div>
               </div>
             </li>
 
             <li className='item'>
               <div className="item-top">
                 <div className="plan">
-                  <a>
+                  <Link to="/">
                     <img src="http://bj.xabjyy.com/templets/baoji/images/kfk171105.jpg" />
-                  </a>
+                  </Link>
                 </div>
                 <div className='txt'>
                   <ul>
-                    <li><a href='/'>言语吞咽障碍</a></li>
-                    <li><a href='/'>康复评定</a></li>
-                    <li><a href='/'>物理因子</a></li>
-                    <li><a href='/'>心理康复</a></li>
+                    <li><Link to="/">言语吞咽障碍</Link></li>
+                    <li><Link to="/">康复评定</Link></li>
+                    <li><Link to="/">物理因子</Link></li>
+                    <li><Link to="/">心理康复</Link></li>
                   </ul>
                 </div>
-                <div className='more'><a href='/'>MORE</a></div>
+                <div className='more'><Link to="/">MORE</Link></div>
               </div>
             </li>
 
             <li className='item'>
               <div className="item-top">
                 <div className="plan">
-                  <a>
+                  <Link to="/">
                     <img src="http://bj.xabjyy.com/templets/baoji/images/kfk171105.jpg" />
-                  </a>
+                  </Link>
                 </div>
                 <div className='txt'>
                   <ul>
-                    <li><a href='/'>言语吞咽障碍</a></li>
-                    <li><a href='/'>康复评定</a></li>
-                    <li><a href='/'>物理因子</a></li>
-                    <li><a href='/'>心理康复</a></li>
+                    <li><Link to="/">言语吞咽障碍</Link></li>
+                    <li><Link to="/">康复评定</Link></li>
+                    <li><Link to="/">物理因子</Link></li>
+                    <li><Link to="/">心理康复</Link></li>
                   </ul>
                 </div>
-                <div className='more'><a href='/'>MORE</a></div>
+                <div className='more'><Link to="/">MORE</Link></div>
               </div>
             </li>
 
             <li className='item'>
               <div className="item-top">
                 <div className="plan">
-                  <a>
+                  <Link to="/">
                     <img src="http://bj.xabjyy.com/templets/baoji/images/kfk171105.jpg" />
-                  </a>
+                  </Link>
                 </div>
                 <div className='txt'>
                   <ul>
-                    <li><a href='/'>言语吞咽障碍</a></li>
-                    <li><a href='/'>康复评定</a></li>
-                    <li><a href='/'>物理因子</a></li>
+                    <li><Link to="/">言语吞咽障碍</Link></li>
+                    <li><Link to="/">康复评定</Link></li>
+                    <li><Link to="/">物理因子</Link></li>
                     <li><a href='/'>心理康复</a></li>
                   </ul>
                 </div>

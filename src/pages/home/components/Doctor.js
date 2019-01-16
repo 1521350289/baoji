@@ -63,7 +63,7 @@ class Doctor extends PureComponent {
                           </p>
                         </div>
                         <div className='doctor-file'>
-                          <a href={item.get('detail')}>点击查看详情</a>
+                          <Link to={item.get('detail')}>点击查看详情</Link>
                         </div>
                       </div>
                     </li>

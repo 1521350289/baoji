@@ -1,4 +1,6 @@
 import React,{ PureComponent } from 'react';
+import { connect } from 'react-redux';
+import { actionCreators } from './store';
 import {
   FooterWrapper,
   FooterBox,
@@ -20,6 +22,7 @@ import {
 
 class Footer extends PureComponent {
   render() {
+    const { handleMouseIn, handleMouseLeave } = this.props;
     return (
       <FooterWrapper>
         <FooterBox>
@@ -43,7 +46,8 @@ class Footer extends PureComponent {
               <Line />
               <FollowList>
                 <a href="/"></a>
-                <a href="/" className='weixin'></a>
+                <a href="/" className='weixin' onMouseOver={handleMouseIn} onMouseLeave={handleMouseLeave}></a>
+                {this.props.mouseIn?<div><img src="http://www.xabjyy.com/templets/baoji/images/qrcode_qjfcyy_dyh.jpg" /></div>:null}
               </FollowList>
               &nbsp;联系我们
               <span> contact us</span>
@@ -92,4 +96,21 @@ class Footer extends PureComponent {
   }
 }
 
-export default Footer;
+const mapState = (state) => {
+  return ({
+    mouseIn: state.getIn(['footer', 'mouseIn'])
+  })
+}
+
+const mapDispath = (dispatch) => {
+  return {
+    handleMouseIn() {
+      dispatch(actionCreators.mouseIn());
+    },
+    handleMouseLeave() {
+      dispatch(actionCreators.mouseLeave());
+    }
+  }
+}
+
+export default connect(mapState, mapDispath)(Footer);

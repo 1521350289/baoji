@@ -8,3 +8,7 @@ export const mouseEnter = (id) => ({
 export const mouseLeave = () => ({
   type: constants.MOUSE_LEAVE
 });
+
+export const initHeaderAction = () => ({
+  type: constants.INIT_HEADER
+});

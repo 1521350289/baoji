@@ -107,6 +107,16 @@ export const FollowList = styled.div`
   .weixin{
     background-position: -43px 1px;
   }
+  div {
+    width: 100px;
+    height: 140px;
+    padding: 25px 0 0 0;
+    position: absolute;
+    z-index: 1;
+    img {
+      width: 100%;
+    }
+  }
 `
 
 export const ContactBox = styled.div`
