@@ -91,7 +91,7 @@ const mapDispathToProps = (dispatch) => {
       dispatch(actionCreators.mouseLeave());
     },
     initHeader() {
-      dispatch(actionCreators.initHeaderAction());
+      dispatch(actionCreators.getHeaderData());
     }
   }
 };

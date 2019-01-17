@@ -9,6 +9,12 @@ export const mouseLeave = () => ({
   type: constants.MOUSE_LEAVE
 });
 
-export const initHeaderAction = () => ({
-  type: constants.INIT_HEADER
+export const initHeaderAction = (data) => ({
+  type: constants.INIT_HEADER,
+  headerImg: data.headerImg,
+  menu: data.menu
+});
+
+export const getHeaderData = () => ({
+  type: constants.GET_HEADER_DATA
 });

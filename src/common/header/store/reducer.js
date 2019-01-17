@@ -3,7 +3,7 @@ import { fromJS } from 'immutable';
 
 const defaultState = fromJS({
   mouseEnter: 0,
-  headerImg: '',
+  headerImg: 'http://www.xabjyy.com/templets/baoji/images/logo20171026.png',
   menu: [{
     id: 1,
     title: '网站首页',
@@ -102,6 +102,11 @@ export default (state = defaultState, action) => {
       return state.set('mouseEnter', fromJS(action.id));
     case constants.MOUSE_LEAVE:
       return state.set('mouseEnter', 0);
+    case constants.INIT_HEADER:
+      console.log(action);
+      // return state.merge({
+      //   headerImg: action
+      // });
     default:
       return state;
   }
