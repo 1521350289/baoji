@@ -98,6 +98,25 @@ const defaultState = fromJS({
     room: '康复科专家',
     detail: '/'
   }],
+  news: {
+    newsList: [{
+      id: 1,
+      title: "西安保济医院＆唐都医院“与爱同行”免费康复评估指导患者征集",
+      date: "18-04-05"
+    },{
+      id: 2,
+      title: "患者家属送来感谢信，为保济优秀的医疗团队点赞！",
+      date: "18-03-24"
+    },{
+      id: 3,
+      title: "汇报|“与爱同行”大型康复评估指导义诊活动圆满结束！赢得患者满堂彩",
+      date: "18-12-08"
+    },{
+      id: 4,
+      title: "西安保济医院美容门诊开诊啦",
+      date: "18-03-23"
+    }]
+  },
   mouseIn: false,
   scroDoctorLeftSize: 0,
   scroTime: 3000
