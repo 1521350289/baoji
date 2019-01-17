@@ -1,6 +1,7 @@
 import { createStore, compose, applyMiddleware } from 'redux';
 import reducer from './reducer';
 import thunk from 'redux-thunk';
+import 'regenerator-runtime/runtime';
 import createSagaMiddleware from 'redux-saga';
 import mySaga from './sagas';
 

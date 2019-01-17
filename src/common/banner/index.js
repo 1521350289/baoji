@@ -70,7 +70,8 @@ class Banner extends PureComponent {
   }
 
   componentDidMount() {
-      this.timer = setInterval(() => this.scroNum(), this.props.scroTime);
+    this.props.initBanner();
+    this.timer = setInterval(() => this.scroNum(), this.props.scroTime);
   }
 
   scroNum() {
@@ -118,6 +119,9 @@ const mapDispatch = (dispatch) => {
     },
     handleChangeNum(num) {
       dispatch(actionCreators.changeNum(num));
+    },
+    initBanner() {
+      dispatch(actionCreators.getBannerData());
     }
   }
 }

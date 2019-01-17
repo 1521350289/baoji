@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "data": {
+    "scroImg": [{
+      "id": 1,
+      "img": "http://bj.xabjyy.com/templets/baoji/images/7aaaa3108acd3e.jpg",
+      "link": "/"
+    },{
+      "id": 2,
+      "img": "http://bj.xabjyy.com/templets/baoji/images/7dbc81d6b25896.jpg",
+      "link": "/"
+    },{
+      "id": 3,
+      "img": "http://bj.xabjyy.com/templets/baoji/images/19c29b586cd594.jpg",
+      "link": "/"
+    }]
+  }
+}

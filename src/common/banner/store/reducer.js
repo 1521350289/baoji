@@ -7,22 +7,7 @@ const defaultState = fromJS({
   scroTime: 4000,
   nowImgNum: 1,
   isScroll: true,
-  scroImg: [{
-    id: 1,
-    img: 'http://bj.xabjyy.com/templets/baoji/images/7aaaa3108acd3e.jpg',
-    link: '/',
-    position: 0
-  },{
-    id: 2,
-    img: 'http://bj.xabjyy.com/templets/baoji/images/7dbc81d6b25896.jpg',
-    link: '/',
-    position: 0
-  },{
-    id: 3,
-    img: 'http://bj.xabjyy.com/templets/baoji/images/19c29b586cd594.jpg',
-    link: '/',
-    position: 0
-  }]
+  scroImg: []
 
 });
 
@@ -35,7 +20,9 @@ export default (state = defaultState, action) => {
     case constants.INIT_IMG_NUM:
       return state.set('nowImgNum', fromJS(1));
     case constants.CHANGE_NUM:
-      return state.set('nowImgNum', fromJS(action.num))
+      return state.set('nowImgNum', fromJS(action.num));
+    case constants.INIT_BANNER_ACTION:
+      return state.set('scroImg', fromJS(action.scroImg));
     default:
       return state;
   }
