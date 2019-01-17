@@ -5,7 +5,8 @@ import axios from 'axios';
 function* getInitHeader() {
   try {
     const res = yield axios.get('./header.json');
-    const action = actionCreators.initHeaderAction(res.data);
+    const result = res.data.data;
+    const action = actionCreators.initHeaderAction(result);
     yield put(action);
   } catch (e) {
     console.log("header.json网络请求失败");
